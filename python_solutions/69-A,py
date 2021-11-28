@@ -1,0 +1,20 @@
+n = int(input())
+l = []
+x = 0
+y = 0
+z = 0
+result = [x, y, z]
+ 
+for i in range(n):
+    temp = list(map(int, input().split(" ")))
+    l.append(temp)
+ 
+for i in range(n):
+    x += l[i][0]
+    y += l[i][1]
+    z += l[i][2]
+eqvi = [x, y, z]
+if eqvi == result:
+    print("YES")
+else:
+    print("NO")
